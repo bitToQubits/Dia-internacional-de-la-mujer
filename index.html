@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<!--El encabezado de la pagina: meta información relevante para el navegador-->
+
+<head>
+   <!--Escogiendo como el navegador leerá los textos dentro del portal-->
+  <meta charset="utf-8">
+ 
+  <!--Enseñando al navegador como será la vista mobile-->
+  <meta name="viewport" content="width=device-width">
+  
+  <!--El titulo de la página-->
+  <title>Jorge Luis Baez</title>
+  
+  <!--El icono de la página-->
+  <link rel="icon" type="image/x-icon" href="/img/logo.png">
+  
+  <!--Definiendo quien es el autor-->
+  <meta name="author" content="Jorge Luis Báez">
+  <!--Descripcion que los navegadores recibiran de la Página-->
+  <meta name="description" content="Tarea escolar sobre el Día de la Mujer en español">
+  <!--Link al archivo CSS-->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--Conectando fuentes de google Fonts al portal-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Ubuntu:wght@300;500;700&display=swap"
+    rel="stylesheet">
+</head>
+<!--Cierre de encabezado-->
+
+<!--Declaración del body-->
+
+<body>
+  <!--Insignia o sello del 8 de marzo.-->
+  <div class="insignia">
+    <h4>8 Marzo</h4>
+  </div>
+  <!--Encabezado de la pagina-->
+  <div class="header">
+    <!--Texto principal del encabezado-->
+    <div class="encabezado">
+      <small>Sobre origen, evolución, actualidad</small>
+      <h1 class="supergrande titulo-principal">El Día internacional de la mujer</h1>
+    </div>
+    <!--Texto secundario del encabezado-->
+    <p class="font_z2">Una fecha (8 de marzo), en la que todo el mundo, entre todos los continentes, se unen
+      para conmemorar
+      a la mujer y su lucha por alcanzar la igualdad, la justicia, la paz y el desarrollo.<span class="titulo-principal">
+        el día internacional de la mujer </span>reconoce el esfuerzo del mundo femenino, independientemente de las
+      fronteras, lenguas, razas, riqueza e incluso del tiempo.</p>
+    <p class="rojo">Veamos algunos ejemplos</p>
+  </div>
+  <!--Cuerpo de la pagina-->
+  <div class="body">
+    <!--Contenedor, uso del box model de CSS-->
+    <div class="contenedor">
+      <!--Sección Grandes Mujeres en la historia-->
+      <div class="mujeres_historia">
+        <p class="grecia_texto">En la Antigua Grecia, Lisístrata, una mujer ateniense, empieza y lidera una huelga
+          sexual contra los hombres para poner fin a una guerra civil. </p>
+        <img src="img/image.png" class="img col center" />
+      </div>
+      <div class="mujeres_historia">
+        <img src="img/francesas.webp" class="img col francesas_desktop" />
+        <p class="francia_texto">En la Revolución Francesa, las parisienses que pedían "libertad, igualdad y
+          fraternidad" marcharon hacia Versalles para exigir el sufragio femenino.</p>
+        <img src="img/francesas.webp" class="img center col francesas_mobile" />
+      </div>
+      <div class="mujeres_historia">
+        <p class="sovieticas_texto gris">En plena Segunda Guerra Mundial, mujeres abandonan sus casas y fábricas para luchar contra el ejército nazi y sus aliados. </p>
+        <img src="img/lyudmila.jfif" class="img col center" />
+      </div>
+    </div>
+    <!--Sección del video-->
+    <div class="video">
+      <!--Uso de la etiqueta iframe, y sus propiedades para la api de YT-->
+      <iframe src="https://www.youtube.com/embed/ViAaELEtwtQ?modestbranding=1&autohide=1&controls=0"
+        title="YouTube video player" frameborder="0" controls="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <!--Titulo mediano para el video-->
+      <h3 class="texto-mediano">Sobre otras Grandes Mujeres en la Historia, invito a
+        ver este video</h3>
+    </div>
+    <!--Contenedor para la sección del dato curioso-->
+    <div class="contenedor">
+      <div class="subcontenedor">
+        <!--SVG son conocidos tambien como vectores graficos escalables. Los utilizo como icono. -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#a43222" class="bi bi-question-square"
+          viewBox="0 0 16 16">
+          <path
+            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+          <path
+            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+        </svg>
+        <!--Titulo en rojo de la sección, seguido de su descripción gris-->
+        <h1 class="rojo">A que no sabias qué ...</h1>
+        <p class="font_z2 gris">El dia internacional de la Mujer se declaro como tal por la ONU
+          (Organización de las Naciones Unidas) el 8 de marzo de 1975. Fue desembocada gracias a las manifestaciones de
+          las mujeres, especialmente en Europa.</p>
+      </div>
+    </div>
+    <!--Sección de acontecimientos feministas-->
+    <div class="cronologia">
+      <small>Una cronologia de los acontecimientos.</small>
+      <h1 class="rojo">Los sucesos que llevaron a que se conmemore el Dia Internacional de la Mujer</h1>
+      <!--CSS avanzado para uso del desplazamiento por scrolleo horizontal-->
+      <div class="desplazamiento_horizontal">
+        <!--Cada tiempo dentro de la linea de tiempo es un modulo.-->
+        <div class="modulo_cronologico">
+          <h4 class="rojo">1848-1909</h4>
+          <p>En Estados Unidos, Elizabeth Candy Stanton y Lucretia Mott
+            organizan una congregación en 1848 de cientos de personas con motivo a que se les prohibe hablar a las
+            mujeres en una convención contra la esclavitud. Inicia uno de los movimientos feministas por el derecho de
+            las mujeres más importantes.
+          </p>
+          <p>En 1909 se declara el primer Dia Nacional de la mujer, tradición
+            que continua hasta el último domingo de febrero hasta 1913.</p>
+        </div>
+        <div class="modulo_cronologico">
+          <h4 class="rojo"">1910</h4>
+          <p>En Copenhague (Dinamarca), cientos por medio a la Segunda
+            Conferencia Internacional de Mujeres Socialistas deciden organizar cada año una Jornada Nacional de la Mujer
+            para obtener el sufragio femenino universal</p>
+        </div>
+        <div class=" modulo_cronologico">
+            <h4 class="rojo">1911</h4>
+            <p>En numerosos países europeos y en Estados Unidos, se manifiesta El
+              Dia Internacional de la Mujer, el 19 de marzo en honor a la revolución de 1848 y de la Comuna de París.
+              Las
+              mujeres exigieron el derecho al voto, y de ocupar cargos públicos, tambien el derecho al trabajo, a la
+              formación profesional y a la no discriminación laboral.</p>
+        </div>
+        <div class="modulo_cronologico">
+          <h4 class="rojo">1913</h4>
+          <p>En Rusia y en vísperas de la primera guerra mundial, las mujeres
+            conmemoraron su primer Día Internacional de la Mujer el último domingo de febrero en mítines clandestinos.
+          </p>
+          <p>En el resto de Europa, las mujeres organizaron reuniones en torno
+            al 8 de marzo del año siguiente para protestar por la guerra o para solidarizarse con el resto de mujeres.
+          </p>
+        </div>
+        <div class="modulo_cronologico">
+          <h4 class="rojo">1915</h4>
+          <p>En medio de los estragos de la Primera Guerra Mundial, tiene lugar
+            en La Haya (Países Bajos) una gran reunión de mujeres el 15 de abril. Participan más de 1300 mujeres
+            provenientes de 12 países.</p>
+        </div>
+        <div class="modulo_cronologico">
+          <h4 class="rojo">1917</h4>
+          <p>Retornamos a Rusia: las mujeres reaccionan ante los dos millones de
+            soldados rusos muertos en la Gran Guerra con una huelga, en demanda de "pan y paz". El resto es historia:
+            cuatro días después el Zar se vio obligado a abdicar y el gobierno provisional concedió a las mujeres el
+            derecho de voto. </p>
+        </div>
+        <div class="modulo_cronologico">
+          <h4 class="rojo">Resto del Siglo XX</h4>
+          <p>Tras la Segunda Guerra Mundial, el 8 de marzo comenzó a tomar
+            protagonismo en muchos países incluso antes de ser reconocido por la ONU, en 1977, como Día Internacional de
+            la Mujer. Finalmente, en 1975, coincidiendo con el Año Internacional de la Mujer, las Naciones Unidas
+            conmemoraron el Día Internacional de la Mujer por primera vez, el 8 de marzo.</p>
+        </div>
+        <div class="modulo_cronologico">
+          <p>Se eligió el 8 de marzo porque esa es la fecha en la que la mujer
+            adquiere derecho al voto en Rusia en 1917. Lo que pasa es que sucedió un 23 de febrero del calendario
+            juliano, utilizado en la Rusia de aquel entonces, mientras que en el resto de países se utiliza el
+            calendario gregoriano, que es un 8 de marzo. </p>
+        </div>
+
+      </div>
+    </div>
+    <!--Fin Sección de acontecimientos feministas-->
+
+    <!--Inicio Sección Mi Opinión-->
+    <!--Contenedor 1-->
+    <div class="contenedor">
+      <!--Contenedor 2-->
+      <div class="subcontenedor">
+        <!--Uso de SVG o graficos vectores escalables-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#a43222" class="bi bi-text-left"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+        </svg>
+        <h1 class="rojo">Mi opinión</h1>
+        <p class="mi-opinion">Creo que es importante que las personas tengan
+          conocimiento de la Historia Humana. Debemos interpretar la historia como si fuera un libro: Un capitulo que no
+          debemos pasar por alto ni tampoco olvidar es la lucha de las mujeres para participar en las decisiones que nos
+          afectan a todos. Constituyen hacia el 49.50% de la población mundial. La opinión en politica, la elección de
+          carrera empresarial o los estudios de la mitad de los humanos existentes debe ser considerado. De esta manera
+          conmemorar el dia internacional de la mujer y tratarlas de acuerdo a la carta internacional de los derechos
+          humanos debe ser un objetivo para los países y debe permanecer en la conciencia de cada individuo.</p>
+      </div>
+    </div>
+     <!--Fin Sección Mi Opinión-->
+  </div>
+  <!--Pie de pagina-->
+  <div class="footer">
+    <h4 class="rojo">Fuente:</h4> <!--Fuentes bibliograficas-->
+    <p><a href="https://www.un.org/es/observances/womens-day/background">Antecedentes del dia Internacional de la Mujer.
+        Articulo de la Organización de las Naciones Unidas.
+      </a><br>Consultado el 16 de marzo del 2023.</p>
+    <p><a href="https://www.un.org/es/observances/womens-day">El Día Internacional de la Mujer - Artículo de la
+        Organización de las Naciones Unidas.</a><br>Consultado el 16 de marzo del 2023.</p>
+      <p><a href="https://www.youtube.com/@IntervencionesGringas">Canal de Intervenciones Gringas</a><br>Consultado el 19 de marzo del 2023.</p>
+    <!--Creditos para el autor-->
+    <p class="indicador">Diseño web - Jorge Luis Báez</p>
+  </div>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+/*Estirando el documento hacia su máximo*/
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  padding-bottom: 10px; /*Usando rellno hacia el final de la pagina*/
+}
+/*Sello del 8 Marzo*/
+.insignia{
+  margin-top: -10px; /*Pegandolo a borde superior*/
+  width: 60px; /*Asignando su largo*/
+  background-color: #a43222; /*Adquiere su color rojo*/
+  padding: 40px; /*Padding general del elemento*/
+  color:white; /*Color blanco de su texto*/
+} 
+/*Selectores y clases CSS aplicados exclusivamente a computadores, laptops, TVs.*/
+@media only screen and (min-width: 800px) {
+  .contenedor, .header{
+    margin: 3% 10% 5% 10%; /*Aplicando el Box model a los contenedores y header*/
+  }
+  /*Asignando largo y alto del video de youtube*/
+  iframe{ 
+    width:685px; 
+    height:335px;
+  }
+  /*Margenes del header*/
+  .header{
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 180px;
+  }
+  /*Sección Mujeres de la Historia*/
+  .mujeres_historia{
+    display: flex;  /*Permiiendo que los items se alinien y se flexibilizen*/
+    align-items: center; /*Centrando los items*/
+    margin-bottom: 180px; /*Asignando margenes a la sección*/
+  }
+  /*Asignando margenes a la izquierda*/
+  .francia_texto, .grecia_texto{
+    padding-left: 1.5em;
+  }
+  /*Asignando largo a la columna a un 40%*/
+  .col{
+    width: 40%;
+  }
+  /*Haciendo desaparecer la segunda imagen para las francesas*/
+  .francesas_mobile{
+    display:none;
+  }
+  /*Asignando valores para la sección video en Grandes Mujeres*/
+  .video{
+    display: flex; /*Flexibilizando elementos y alineandolos*/
+    align-items: center; /*Centrando elementos*/
+  }
+  /*Especificando caracteristicas para texto mediano*/
+  .texto-mediano{
+    color:#2b4052; /*Leve color azul para texto*/
+    padding-left: 20px; /*Alejandolo de la izquierda 20 px*/
+  }
+  /*Relleno y espaciado para la sección cronologia*/
+  .cronologia{
+    padding-left: 6em; 
+    padding-right: 6em; 
+  }
+}
+
+/*Selectores y clases CSS para celulares mobiles y otros dispositivos <800px*/
+@media only screen and (max-width: 800px) {
+    /*Estirando el iframe al 100%*/
+    iframe{
+    width:100%;
+    height: 100%;
+  }
+  /*Alineando cada parrafo dentro de grandes mujeres de la historia al centro*/
+   .mujeres_historia > p{
+     text-align: center;
+   }
+  /*Haciendo desaparecer la primera imagen para las francesas*/
+   .francesas_desktop{
+    display: none;
+  }
+  /*Alargando las columnas a 80%*/
+  .col{
+    width: 80%;
+  }
+  /*Margenes hacia el bottom a 2.5em de su tamaño original*/
+  .mujeres_historia{
+    margin-bottom: 2.5em;
+  }
+
+  /*Posicionando al centro, 3em izquierda y derecha, la cronologia*/
+  .cronologia{
+     padding-left: 3em;
+     padding-right: 3em;
+   }
+  /*Margenes generales del header, 50px arriba abajo derecha izquierda*/
+  .header{
+    margin: 50px;
+  }
+  /*Posicionando al centro*/
+  .center{
+    display:block; /*Mostramos el elemento como un bloque*/
+    margin-left:auto; /*Dejamos que el navegador ordene desde la iqzuierda el margen*/
+    margin-right:auto; /*Dejamos que el navegador ordene desde la derecha el margen*/
+  }
+}
+
+/*Propiedades CSS para header*/
+.header{
+  /*background-color: #ff566d;
+  color:white;*/
+  color: #505050; /*Color gris para textos dentro del header*/
+  margin-top: 40PX; /*Alejando 90px desde arriba el header*/
+  text-align: left; /*Alineación izquierda del texto*/
+}
+/*Posicion relativa del encabezado*/
+div.encabezado{
+  position: relative;
+}
+/*Una clase especial "supegrande" que hace de sus elementos rojos y grandes*/
+.supergrande{
+  font-size: 3em;
+  color: #a43222;
+}
+
+.titulo-principal{
+  text-transform: capitalize; /*Haciendo mayuscula cada palabra de las oraciones*/
+}
+/*Para las etiquetas small*/
+small{
+  font-family: 'Ubuntu', serif; /*Uso de font-family: Ubuntu, tipo serif*/
+  text-transform: uppercase; /*Haciendo mayusculas las etiquetas small*/
+}
+/*Desde h1-h4, que sean fuente Merryweather*/
+h1, h2, h3, h4{
+    font-family: 'Merriweather', serif;
+}
+/*Clase especial .font_z2: font size 20 px*/
+.font_z2{
+  font-size: 20px; 
+}
+
+.img{ 
+  border-radius: 20px; /*Redondeando los bordes de las imagenes*/
+  box-shadow: 0 0 10px; /*Agregando sombra a las imagenes: blur de 10px*/
+}
+
+.francia_texto, .grecia_texto,.sovieticas_texto{
+  font-size: 2em; /*Volviendo los textos de las Mujeres de la Historia mas grandes*/
+}
+
+.francia_texto{
+  color:#a43222; /*Color rojo para las francesas*/
+}
+.grecia_texto{
+  color:#a4773d; /*Color amarrillo palido para las antiguas grecas*/
+}
+
+/*propiedades CSS para la sección del video dentro de Mujeres de la Historia*/
+.video{
+  position: relative; /*Posicion relativa a otros elementos*/
+  padding: 50px; /*Relleno a un 50px en todos los lados*/
+  left:-10px; /*Pegando a la izquierda el elemento completo*/
+  background: #a43222; /*Fondo rojo*/
+  /*Dividiendo a un 30% en rojo el fondo y el resto es blanco*/
+  background: linear-gradient(90deg, #a43222 30%, rgba(255,255,255,1) 30%);
+}
+
+.texto-mediano{
+  font-size: 1.3em; /*Volviendo 1.3 su tamaño original el texto mediano de la pagina*/
+}
+.rojo{
+  color: #a43222; /*Color rojo caracteristico*/
+}
+.gris{
+  color: #505050;  /*Color gris caracteristico*/
+}
+/*Propiedades CSS para la cronologia*/
+.cronologia{
+  border-top: 1px solid #a43222;  /*Borde superior rojo*/
+  border-bottom: 1px solid #a43222;  /*Borde inferior rojo*/
+  padding-top: 3em; /*Padding superior a 3em*/
+  padding-bottom: 3em; /*Padding inferior a 3em*/
+  color: #505050; /*Color gris para todos los elementos de texto bajo cronologia*/
+}
+/*Clase muy especial: permtie el desplazamiento horizontal de la cronologia*/
+.desplazamiento_horizontal{
+  width: 100%; /*Estirando el contenedor a su 100%*/
+  overflow-wrap: normal; /*Permitiendo que los modulso cronologicos se extiendan mas alla de lo esperado*/
+  overflow-x: scroll; /*Permitiendo que el scroll horizontal se pueda usar*/
+  display:inline-flex; /*Flexibilizando los elementos y poniendolos en linea*/
+  align-items: center; /*Alienando todos los elementos al centro*/
+}
+.modulo_cronologico{
+  padding-right: 2.5rem; /*Distanciando cada modulo 2.5 rem;*/
+}
+.modulo_cronologico > p{
+  line-height: 1.5; /*Las lineas de parrafo tendran 1.5 de separacion vertical*/
+  width: 400px; /*Tamaño extendido a 400px*/
+}
+/*Propiedades CSS de mi opinion*/
+.mi-opinion{
+  font-size: 1.1em; /*1.1 em de su tamaño original, en cuanto texto*/
+  line-height: 1.5; /*Las lineas de parrafo tendran 1.5 de separacion vertical*/
+  color: #505050; /*Coloreando el texto a gris*/
+}
+.footer{
+  margin: 0% 10% 5% 10%; /*Asignando nada de margen superior, 5% abajo y 10% a los lados al pie de pagina*/
+  color: #505050; /*Coloreando el texto a gris*/
+}
+
+.subcontenedor{
+  margin:50px; /*Creando un subcontenedor que tendra margenes a 50px*/
+}
+
+img{
+  margin-left: 2em; /*Margenes izquierdos de las imagenes a 2em*/
+}
+a{
+  text-decoration: none; /*Eliminando la decoracion de texto a la etiqueta a*/
+}
+p, span{
+  font-family: 'Ubuntu', serif; /*Ubuntu para todos los span y parrafos*/
+}
+
+p.indicador{
+  position: relative;  /*Uso de position*/
+  /*Uso de font*/
+  font-size: 1em;
+  font-weight: bolder; /*Haciendo mas oscuro el texto que el valor heredado (600)*/
+  bottom: 0; /*Usando bottom para posicionar*/
+}
